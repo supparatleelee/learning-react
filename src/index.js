@@ -23,6 +23,10 @@ class Position extends Component {
 
 function MainContainer(props) {
   const birthDate = '2001-08-16'; // parent component
+  // we can't modify props
+  //props.age = 20 // like this DON'T
+  // props.gender = 'Male' // never modify its own propps = pure function (= don't change its input & always return the same result for the same inputs)
+  // because props is for read only
   console.logo(props.test);
   console.logo(props.obj.name);
   console.logo(props.boo); // true = boolean can exclude ={} in component case.
