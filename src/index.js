@@ -4,6 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import sayHi from './import-export/sayhi';
+import { sayHello } from './import-export/sayhi';
+import { month as mth } from './import-export/sayhi';
+
+sayHi();
+sayHello();
+console.log(mth);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

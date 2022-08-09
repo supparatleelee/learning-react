@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
+//jsx
 function App() {
   return (
     <div className="App">
@@ -22,4 +23,5 @@ function App() {
   );
 }
 
+//module
 export default App;
