@@ -7,6 +7,8 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    {/* Call App function = very code line in App.js will be run and render */}
+    {/* function will be rerun again everytime we move to the new state === app function will rerun because everything including state components are in there*/}
     <App />
   </React.StrictMode>
 );
