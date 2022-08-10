@@ -1,23 +1,58 @@
 import logo from './logo.svg';
 import './App.css';
 
+// Lab 1
+// receive user input = value => Then pass it to the event object
+// const handleInputLog = (event) => {
+//   console.log(event.target.value);
+// };
+
+// Lab 2
+// const handleSelectLog = (event) => {
+//   console.log(event.target.value);
+// };
+
+// Lab 3
+const handleCheckbox = (event) => {
+  console.log(event.target.name);
+  console.log(event.target.value);
+};
+
+// Lab 4
+// const handleRedirect = (event) => {
+//   window.confirm('Leave for https://google.com');
+// };
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* Lab 1 */}
+      {/* <input onChange={handleInputLog} /> */}
+
+      {/* Lab 2 */}
+      {/* <select onChange={handleSelectLog}>
+        <option value="Singapore">Singapore</option>
+        <option value="Thailand">Thailand</option>
+        <option value="US">US</option>
+        <option value="UK">UK</option>
+        <option value="Canada">Canada</option>
+      </select> */}
+
+      {/* Lab 3 */}
+      <form onChange={handleCheckbox}>
+        <input type="checkbox" name="phoneBrand1" value="Apple" />
+        <label htmlFor="phoneBrand1">Apple</label>
+        <input type="checkbox" name="phoneBrand2" value="Samsung" />
+        <label htmlFor="phoneBrand2">Samsung</label>
+        <input type="checkbox" name="phoneBrand3" value="Oppo" />
+        <label htmlFor="phoneBrand3">Oppo</label>
+        <button>Submit</button>
+      </form>
+
+      {/* Lab 4 */}
+      {/* <a href="https://google.com" onClick={handleRedirect}>
+        Google
+      </a> */}
     </div>
   );
 }
