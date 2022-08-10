@@ -2,6 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  // Use Case of event handling = user submit email or something we need to use that value to compare with our database
+
+  // in this js, can't use function confirm directly
+  // window.confirm('Are you sure')
+
   // #1
   // const handleClick = () => {
   //   alert('Click');
