@@ -3,21 +3,33 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // Lab 1
+    /*
+  <div>
+    <button className="margin-right">+</button>
+    <p className="inline margin-right">0</p>
+    <button className="margin-right">-</button>
+    <button>Reset</button>
+  </div>
+  */
+
+    // Lab 2
+    <div>
+      <button className="block">Add</button>
+      <p
+        style={{
+          display: 'inline',
+          color: 'green',
+          textDecoration: 'line-through',
+        }}
+      >
+        Task 1
+      </p>
+      <button>Edit</button> <button>Del</button>
+      <div>
+        <p style={{ display: 'inline' }}>Task 2</p> <button>Edit</button>{' '}
+        <button>Del</button>
+      </div>
     </div>
   );
 }
