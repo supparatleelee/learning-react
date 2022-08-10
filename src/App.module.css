@@ -1,0 +1,22 @@
+/* .w-100 {
+  width: 25rem;
+}
+
+.h-100 {
+  height: 25rem;
+}
+
+.border-yellow-4 {
+  border: 4px solid yellow;
+} */
+
+.test {
+  border-radius: 16px;
+  width: 25rem;
+  height: 25rem;
+  border: 4px solid yellow;
+}
+/* module need to only put in one className */
+
+/* comment import App.css & index.css in index.js */
+/* import css module in App.js */
