@@ -27,7 +27,7 @@ import './App.css';
 // Lab 4
 const handleRedirect = (event) => {
   event.preventDefault(); //stop redirect // don't forget () because preventDefailt is a method.
-  const redirect = window.confirm('Leave for https://google.com');
+  const redirect = window.confirm('Leave for https://google.com'); // confirm is yes/no question = true / false
   if (redirect) {
     window.location.href = 'https://google.com';
   }
